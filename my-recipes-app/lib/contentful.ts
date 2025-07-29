@@ -48,7 +48,7 @@ export async function getRecipeById(id: number): Promise<Recipe | null> {
   const fields = entry.fields as any;
 
   return {
-    id: fields.id,
+    id: fields.id ,
     title: fields.title,
     description: fields.description,
     ingredients: fields.ingredients,

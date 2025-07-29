@@ -1,7 +1,7 @@
-import { NextResponse } from "next/server";
+import {NextRequest, NextResponse } from "next/server";
 import recipes from "../../../../data/recipes.json";
 export async function GET(
-  request: Request,
+  request: NextRequest,
   context: { params: { id: string } }
 ) {
   const recipeId = Number(context.params.id);
